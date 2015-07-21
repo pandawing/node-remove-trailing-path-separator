@@ -9,7 +9,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "conventional-changelog": "^0.1.0-beta",
+    "conventional-changelog": "^0.1.0",
     "david": "^6.1.6",
     "eclint": "^0.2.6",
     "eslint": "^1.0.0-rc",
