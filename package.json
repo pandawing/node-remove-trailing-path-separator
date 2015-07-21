@@ -1,6 +1,6 @@
 {
   "name": "remove-trailing-separator",
-  "description": "My spectacular module",
+  "description": "Remove trailing path separator from string.",
   "version": "0.0.0",
   "author": {
     "name": "sanemat",
@@ -27,10 +27,14 @@
     "index.js"
   ],
   "keywords": [
-    ""
+    "path",
+    "separator",
+    "string",
+    "trailing",
+    "trim"
   ],
   "license": "MIT",
-  "repository": "sanemat/remove-trailing-separator",
+  "repository": "pandawing/node-remove-trailing-separator",
   "scripts": {
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
     "david": "david update",
