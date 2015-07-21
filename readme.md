@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url] [![Travis-CI Status][travis-image]][travis-url] [![Appveyor Status][appveyor-image]][appveyor-url] [![Daviddm Status][daviddm-image]][daviddm-url]
 
-> My spectacular module
+> Remove trailing path separator from string.
 
 
 ## Install
@@ -17,31 +17,27 @@ $ npm install --save remove-trailing-separator
 ```js
 var removeTrailingSeparator = require('remove-trailing-separator');
 
-removeTrailingSeparator('unicorns');
-//=> unicorns & rainbows
+removeTrailingSeparator('/foo/bar/baz/');
+//=> /foo/bar/baz
+removeTrailingSeparator('/foo/bar/baz//');
+//=> /foo/bar/baz
+removeTrailingSeparator('\\foo\\bar\\baz\\');
+//=> \\foo\\bar\\baz
+removeTrailingSeparator('\\foo\\bar\\baz\\\\');
+//=> \\foo\\bar\\baz
 ```
-
 
 
 ## API
 
-### removeTrailingSeparator(input, [options])
+### removeTrailingSeparator(input) -> String
 
 #### input
 
 *Required*  
 Type: `string`
 
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
+Like path string.
 
 
 ## Changelog
