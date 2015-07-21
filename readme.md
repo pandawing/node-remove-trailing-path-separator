@@ -14,6 +14,7 @@ $ npm install --save remove-trailing-path-separator
 
 ## Usage
 
+
 ```js
 var removeTrailingPathSeparator = require('remove-trailing-path-separator');
 
