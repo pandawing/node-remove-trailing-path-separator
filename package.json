@@ -27,11 +27,16 @@
     "index.js"
   ],
   "keywords": [
+    "backslash",
     "path",
+    "sep",
     "separator",
+    "slash",
     "string",
     "trailing",
-    "trim"
+    "trim",
+    "win",
+    "windows"
   ],
   "license": "MIT",
   "repository": "pandawing/node-remove-trailing-path-separator",
