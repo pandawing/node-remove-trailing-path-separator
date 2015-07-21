@@ -1,5 +1,5 @@
 {
-  "name": "remove-trailing-separator",
+  "name": "remove-trailing-path-separator",
   "description": "Remove trailing path separator from string.",
   "version": "0.0.0",
   "author": {
@@ -34,7 +34,7 @@
     "trim"
   ],
   "license": "MIT",
-  "repository": "pandawing/node-remove-trailing-separator",
+  "repository": "pandawing/node-remove-trailing-path-separator",
   "scripts": {
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
     "david": "david update",

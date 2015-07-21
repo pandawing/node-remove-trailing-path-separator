@@ -1,4 +1,4 @@
-# remove-trailing-separator
+# remove-trailing-path-separator
 
 [![NPM version][npm-image]][npm-url] [![Travis-CI Status][travis-image]][travis-url] [![Appveyor Status][appveyor-image]][appveyor-url] [![Daviddm Status][daviddm-image]][daviddm-url]
 
@@ -8,29 +8,29 @@
 ## Install
 
 ```
-$ npm install --save remove-trailing-separator
+$ npm install --save remove-trailing-path-separator
 ```
 
 
 ## Usage
 
 ```js
-var removeTrailingSeparator = require('remove-trailing-separator');
+var removeTrailingPathSeparator = require('remove-trailing-path-separator');
 
-removeTrailingSeparator('/foo/bar/baz/');
+removeTrailingPathSeparator('/foo/bar/baz/');
 //=> /foo/bar/baz
-removeTrailingSeparator('/foo/bar/baz//');
+removeTrailingPathSeparator('/foo/bar/baz//');
 //=> /foo/bar/baz
-removeTrailingSeparator('\\foo\\bar\\baz\\');
+removeTrailingPathSeparator('\\foo\\bar\\baz\\');
 //=> \\foo\\bar\\baz
-removeTrailingSeparator('\\foo\\bar\\baz\\\\');
+removeTrailingPathSeparator('\\foo\\bar\\baz\\\\');
 //=> \\foo\\bar\\baz
 ```
 
 
 ## API
 
-### removeTrailingSeparator(input) -> String
+### removeTrailingPathSeparator(input) -> String
 
 #### input
 
@@ -50,11 +50,11 @@ Like path string.
 MIT © [sanemat](http://sane.jp)
 
 
-[travis-url]: https://travis-ci.org/sanemat/remove-trailing-separator
-[travis-image]: https://img.shields.io/travis/sanemat/remove-trailing-separator/master.svg?style=flat-square&label=travis
-[appveyor-url]: https://ci.appveyor.com/project/sanemat/remove-trailing-separator/branch/master
-[appveyor-image]: https://img.shields.io/appveyor/ci/sanemat/remove-trailing-separator/master.svg?style=flat-square&label=appveyor
-[npm-url]: https://npmjs.org/package/remove-trailing-separator
-[npm-image]: https://img.shields.io/npm/v/remove-trailing-separator.svg?style=flat-square
-[daviddm-url]: https://david-dm.org/sanemat/remove-trailing-separator
-[daviddm-image]: https://img.shields.io/david/sanemat/remove-trailing-separator.svg?style=flat-square
+[travis-url]: https://travis-ci.org/sanemat/remove-trailing-path-separator
+[travis-image]: https://img.shields.io/travis/sanemat/remove-trailing-path-separator/master.svg?style=flat-square&label=travis
+[appveyor-url]: https://ci.appveyor.com/project/sanemat/remove-trailing-path-separator/branch/master
+[appveyor-image]: https://img.shields.io/appveyor/ci/sanemat/remove-trailing-path-separator/master.svg?style=flat-square&label=appveyor
+[npm-url]: https://npmjs.org/package/remove-trailing-path-separator
+[npm-image]: https://img.shields.io/npm/v/remove-trailing-path-separator.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/sanemat/remove-trailing-path-separator
+[daviddm-image]: https://img.shields.io/david/sanemat/remove-trailing-path-separator.svg?style=flat-square
