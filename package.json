@@ -10,13 +10,13 @@
   "dependencies": {},
   "devDependencies": {
     "conventional-changelog": "^0.4.2",
-    "david": "^6.1.6",
     "eclint": "^1.1.1",
     "eslint": "^1.0.0-rc",
     "espower-loader": "^1.0.0",
     "fixpack": "^2.2.0",
     "globstar": "^1.0.0",
     "mocha": "^2.2.5",
+    "npm-check-updates": "^2.3.0",
     "power-assert": "^0.11.0",
     "touch": "^1.0.0"
   },
@@ -42,12 +42,12 @@
   "repository": "pandawing/node-remove-trailing-path-separator",
   "scripts": {
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
-    "david": "david update",
     "eclint": "globstar --ignore \"node_modules/**\" -- eclint check \"*.{js,yml,md,json}\"",
     "eslint": "eslint .",
     "fixpack": "fixpack",
     "git:tag": "git tag v${npm_package_version}",
     "lint": "npm run eclint && npm run eslint",
+    "ncu": "ncu -u",
     "test": "mocha --require ./enable-power-assert.js -- ./test.js",
     "verify": "npm run lint && npm run test"
   }
