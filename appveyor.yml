@@ -3,11 +3,18 @@
 # init
 clone_depth: 20
 
+environment:
+  matrix:
+  - nodejs_version: 8
+  - nodejs_version: 9
+
 # install
 install:
+- ps: . .\Execute-With-Retry
+- ps: Execute-With-Retry { Install-Product node $env:nodejs_version }
 - node --version
 - npm --version
-- npm install
+- windows_retry npm install
 
 # build
 build: off
