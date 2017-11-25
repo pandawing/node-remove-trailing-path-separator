@@ -10,11 +10,10 @@ environment:
 
 # install
 install:
-- ps: . .\Execute-With-Retry
-- ps: Execute-With-Retry { Install-Product node $env:nodejs_version }
+- cmd: appveyor-retry powershell Install-Product node $env:nodejs_version
 - node --version
 - npm --version
-- windows_retry npm install
+- appveyor-retry call npm install
 
 # build
 build: off
