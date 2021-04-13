@@ -8,7 +8,7 @@
     "url": "sane.jp"
   },
   "devDependencies": {
-    "conventional-changelog": "^3.1.24",
+    "conventional-changelog-cli": "^2.1.1",
     "eclint": "^2.8.1",
     "eslint": "^4.0.0",
     "espower-loader": "^1.0.0",
@@ -37,7 +37,7 @@
   "license": "MIT",
   "repository": "pandawing/node-remove-trailing-path-separator",
   "scripts": {
-    "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
+    "changelog": "touch changelog.md && conventional-changelog -i changelog.md -s --preset angular",
     "eclint": "globstar --ignore \"node_modules/**\" -- eclint check \"*.{js,yml,md,json}\"",
     "eslint": "eslint .",
     "fixpack": "fixpack",
