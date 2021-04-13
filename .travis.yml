@@ -1,7 +1,7 @@
 # https://travis-ci.org/
 language: node_js
 node_js:
-  - 6
-  - 8
-  - 9
+  - 12
+  - 14
+  - 15
 script: "npm run verify"
