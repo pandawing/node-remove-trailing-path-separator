@@ -19,9 +19,6 @@
     "power-assert": "^1.1.0",
     "touch": "^1.0.0"
   },
-  "engines": {
-    "node": ">=0.10.0"
-  },
   "files": [
     "index.js"
   ],
