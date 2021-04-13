@@ -1,3 +1,7 @@
+## [1.0.3](https://github.com/pandawing/node-remove-trailing-path-separator/compare/v1.0.2...v1.0.3) (2021-04-13)
+
+* Bump dev dependencies
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/pandawing/node-remove-trailing-path-separator/compare/v1.0.1...v1.0.2) (2017-11-25)
 
